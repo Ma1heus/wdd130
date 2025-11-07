@@ -9,7 +9,11 @@ header{
     
     
     background-color: steelblue;
+}
 
+nav{
+    background-color: #eee;
+    padding: 3em;
 }
 
 nav a{
@@ -22,7 +26,11 @@ h1{
     color: steelblue;
 }
 
-maing img{
+main{
+    max-width: 100%;
+}
+
+main img{
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
