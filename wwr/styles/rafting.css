@@ -3,7 +3,6 @@
 --secondary-color: #276279;
 --accent1-color: #264653;
 --accent2-color: #285263;
---heading-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -13,17 +12,53 @@
 }
 
 body{
+    margin: 1rem auto;
+    border-bottom: 1px solid #ccc;
     font-family: var(--heading-font);
     color:var(--accent1-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 270px 1fr;
+    background-color: #d9c9f0;
+    padding: 20px;
+    gap: 20px;
+}
+
+header nav ul{
+    display: flex;
+
+    justify-content: space-around;
+    list-style: none;
+}
+
+header li{
+    padding: 10px 20px;
+    border: 1px solid #276279;
+    background-color: #fff;
+    text-align: center;
+    flex: 1;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: .7em;
+    color: var(--accent1-color);
+    font-weight:700;
+    text-align: center;
 }
 
 header, main, footer{
     width: 840px;
     margin: 0 auto;
 }
-    
-header nav a{
-    text-decoration: none;
+
+header img{
+    margin-left: 40px;
+    height: 10em;
 }
 
 h1, h2{
@@ -37,6 +72,10 @@ nav, p, section, article{
 
 .socialmedia a{
     text-decoration: none;
+}
+
+main{
+    margin-top: 30px;
 }
 
 .hero{
