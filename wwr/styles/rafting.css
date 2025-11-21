@@ -16,7 +16,6 @@ body{
     grid-template-columns:1fr;
 
     margin: 1rem auto;
-    font-family: var(--heading-font);
     color:var(--accent1-color);
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -91,10 +90,9 @@ main{
 }
 
 .hero article{
+    display: flex;
+    align-items: center;
     position: absolute;
-}
-
-article{
     margin-top: -170px;
     opacity: 0.68;
     background-color: var(--accent1-color);
