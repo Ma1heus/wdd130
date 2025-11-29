@@ -19,6 +19,11 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+main p{
+    text-align: center;
+    padding: 10px;
+}
+
 /*** GLOBAL LAYOUT WIDTHS ***/
 header, main, footer {
     max-width: 840px;
@@ -35,6 +40,7 @@ header {
     padding: 20px;
     gap: 20px;
     margin-bottom: 50px;
+    color: #fff;
 }
 
 header img {
@@ -60,6 +66,7 @@ header li {
 
 header li a{
     text-decoration: none;
+    color: #000;
 }
 
 /*** MAIN HERO ***/
@@ -99,17 +106,13 @@ header li a{
 .hero article img{
     float: right;
     width: 125px;
+    height: 70px;
 }
 
 .hero .banner{
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero article img{
-    height: 70px;
-    
 }
 
 /*** SECTION HISTORY ***/
@@ -197,9 +200,12 @@ header li a{
 /*** CONTACT SECTION GRID ***/
 .contact-container {
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 20px;
-    margin: 40px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 840px;
+    width: 100%;
+    align-items: start;
 }
 
 /*** MAP ***/
@@ -215,7 +221,7 @@ header li a{
     gap: 12px;
 }
 
-.contact-page .contact-form label {
+.contact-form label {
     font-weight: bold;
 }
 
@@ -228,8 +234,10 @@ header li a{
 
 .contact-page .grid-container {
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 20px 10px;
+    place-items: left;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
 /*** RADIO AND CHECKBOX ***/
