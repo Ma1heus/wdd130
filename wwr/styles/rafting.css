@@ -73,7 +73,7 @@ header li a{
 
 .hero{
     position: relative;
-    border: 2px solid #264653;
+    border: 2px solid #022330;
 }
 
 .hero h1{
@@ -82,7 +82,7 @@ header li a{
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: #fff;
 }
@@ -91,12 +91,14 @@ header li a{
     display: flex;
     align-items: center;
     position: absolute;
-    margin: -150px 10px 0px 10px;
-    padding: 8px;
-    opacity: 0.68;
+    left: 10px;
+    right: 10px;
+    bottom: 20px; 
+    padding: 12px;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: #fff;
-    gap: 10px;
+    gap: 12px;
 }
 
 .hero article p{
@@ -320,3 +322,157 @@ footer p{
     height: 50px;
 }
 
+/*** HOME PAGE – HERO SECTION ***/
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    border: 2px solid #022330;
+}
+
+.home-hero img.hero-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    opacity: 0.85;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home-hero article {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: var(--accent1-color);
+    opacity: 0.85;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.home-hero article img {
+    width: 130px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/*** CALL TO ACTION ***/
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    padding: 30px 10px;
+    width: auto;
+}
+
+.cta-section a{
+    background:#276279;
+    width:150px;
+    margin-top: 30px;
+    padding: 12px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:6px;
+}
+
+.cta-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    padding: 14px 24px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+}
+
+
+/*** NEWSLETTER FORM ***/
+
+.newsletter {
+    margin: 60px auto 40px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.newsletter input {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 12px;
+    background-color: var(--accent2-color);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.newsletter button:hover {
+    opacity: 0.9;
+}
+
+
+/*** GRID – PURPOSE SECTION ***/
+
+.purpose {
+    margin-top: 60px;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.purpose-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--accent1-color);
+}
+
+.purpose-grid p {
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 10px;
+}
