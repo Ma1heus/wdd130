@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="Rafting Company's Logo">
+        <img src="images/z-splash.png" alt="Rafting Company&#39;s Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,11 +28,12 @@
 
         <!-- HERO SECTION -->
         <div class="home-hero">
-            <img class="hero-banner" src="images/rafting-home-banner.jpg" alt="Rafting Adventure in the water">
+            <img class="hero-banner" src="images/rafting-home-banner.jpg"
+                alt="Rafting group riding through whitewater waves">
             <h1>Experience the Thrill of Whitewater Rafting!</h1>
 
             <article>
-                <img src="images/rafting-boat.jpg" alt="Rafting Boat in the water">
+                <img src="images/rafting-boat.jpg" alt="Rafting boat navigating the river">
                 <p>
                     Join us for unforgettable rafting adventures. Our experienced guides ensure a safe and exciting
                     trip for everyone – from beginners to thrill-seekers!
@@ -46,17 +47,17 @@
 
             <div class="purpose-grid">
                 <div class="grid-item">
-                    <img src="images/rafting-routes.jpg" alt="Adventure Rafting">
+                    <img src="images/rafting-routes.jpg" alt="Rafting routes for different levels">
                     <p>We offer exciting routes perfect for beginners and experts.</p>
                 </div>
 
                 <div class="grid-item">
-                    <img src="images/rafting-guides.jpg" alt="Rafting Team">
+                    <img src="images/rafting-guides.jpg" alt="Professional rafting guides team">
                     <p>Our certified guides ensure you have a fun and safe experience.</p>
                 </div>
 
                 <div class="grid-item">
-                    <img src="images/breathtaking-landscape.jpg" alt="River View">
+                    <img src="images/breathtaking-landscape.jpg" alt="Beautiful river landscape at sunset">
                     <p>Enjoy breathtaking landscapes and unforgettable memories.</p>
                 </div>
             </div>
@@ -67,12 +68,18 @@
             <h2>Sign Up for Our Newsletter</h2>
             <p>Get updates about new adventures, discounts, and special events!</p>
 
-            <form>
-                <input type="text" name="fullname" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <button>
-                    Subscribe
-                </button>
+            <form class="newsletter-form">
+                <div class="field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <button type="submit">Subscribe</button>
             </form>
         </section>
 
@@ -80,9 +87,7 @@
         <section class="cta-section">
             <h2>Ready for your next adventure?</h2>
             <p>Explore our trips and choose the perfect rafting experience for you.</p>
-            <a href="trips.html">
-                View Trips
-            </a>
+            <a href="trips.html">View Trips</a>
         </section>
 
     </main>
@@ -92,7 +97,7 @@
         <nav class="socialmedia">
             <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Logo"></a>
             <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram Logo"></a>
-            <a href="https://www.whatsapp.com"><img src="images/whatsapp.svg" alt="whatsapp Logo"></a>
+            <a href="https://www.whatsapp.com"><img src="images/whatsapp.svg" alt="Whatsapp Logo"></a>
         </nav>
     </footer>
 

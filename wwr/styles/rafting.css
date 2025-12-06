@@ -471,6 +471,33 @@ footer p{
     opacity: 0.9;
 }
 
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.field label {
+    width: 120px;
+    text-align: right;
+}
+
+.field input {
+    flex: 1;
+}
+
+.newsletter-form button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+
 /*** Purpose and Newsletter h2 ***/
 
 .purpose h2, .newsletter h2, .cta-section h2{
